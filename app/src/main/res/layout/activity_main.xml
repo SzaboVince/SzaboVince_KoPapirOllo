@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Player"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/rock"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="A te választásod"
+        android:layout_below="@id/Player"
+        android:textAlignment="center"
+        android:id="@+id/Tevalasztasod"
+        android:textSize="25sp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Com"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/rock"
+        android:layout_below="@+id/Tevalasztasod"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="A gép választása"
+        android:layout_below="@id/Com"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:id="@+id/Comvalasztasa"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Eredmény: Ember: 0 Computer: 0"
+        android:layout_below="@id/Comvalasztasa"
+        android:textAlignment="center"
+        android:id="@+id/Eredmeny"
+        android:paddingTop="20dp"
+        android:textSize="18sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearis"
+        android:layout_below="@+id/Eredmeny"
+        android:orientation="horizontal"
+        android:gravity="center">
+        
+        <Button
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:text="KŐ"
+            android:id="@+id/ko"
+            android:background="@drawable/button"/>
+
+        <Button
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:text="PAPÍR"
+            android:layout_margin="20dp"
+            android:id="@+id/papir"
+            android:background="@drawable/button"/>
+
+        <Button
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:text="OLLÓ"
+            android:id="@+id/ollo"
+            android:background="@drawable/button"/>
+
+        
+    </LinearLayout>
+
+</RelativeLayout>
